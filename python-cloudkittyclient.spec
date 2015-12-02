@@ -44,15 +44,16 @@ Rating-as-a-Service component for OpenStack.
 %{__python2} setup.py build
 
 %install
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+%{__python2} setup.py install -O1 --skip-build --root %{buildroot}
 
 sphinx-build -b html doc/source html
 
 %files
 %license LICENSE
 %doc README.rst
-%{_bindir}/*
-%{python_sitelib}/*
+%{_bindir}/cloudkitty
+%{python2_sitelib}/cloudkittyclient
+%{python2_sitelib}/python_cloudkittyclient-%{upstream_version}-py?.?.egg-info
 
 %files doc
 %license LICENSE
