@@ -10,6 +10,7 @@ Source0:       http://pypi.python.org/packages/source/p/%{name}/%{name}-%{versio
 
 BuildArch:     noarch
 
+BuildRequires: python2-devel
 BuildRequires: python-setuptools
 BuildRequires: python-pbr
 BuildRequires: python-keystoneclient
