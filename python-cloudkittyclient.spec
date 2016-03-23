@@ -1,15 +1,16 @@
 %{!?upstream_version: %global upstream_version %{version}}
 
 Name:          python-cloudkittyclient
-Version:       XXX
-Release:       XXX
+Version:       0.5.0
+Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://github.com/openstack/%{name}
-Source0:       http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+Source0:       http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}%{?milestone}.tar.gz
 
 BuildArch:     noarch
 
+BuildRequires: python2-devel
 BuildRequires: python-setuptools
 BuildRequires: python-pbr
 BuildRequires: python-keystoneclient
@@ -60,3 +61,5 @@ sphinx-build -b html doc/source html
 %doc html
 
 %changelog
+* Wed Mar 23 2016 RDO <rdo-list@redhat.com> 0.5.0-0.1
+-  Rebuild for Mitaka 
