@@ -1,5 +1,5 @@
 [gerrit]
-host=review.gerrithub.io
+host=review.rdoproject.org
 port=29418
-project=openstack-packages/python-cloudkittyclient
+project=openstack/cloudkittyclient-distgit
 defaultbranch=rpm-master
