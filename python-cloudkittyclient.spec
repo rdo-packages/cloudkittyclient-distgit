@@ -12,7 +12,7 @@ Release:       XXX
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
-Source0:       http://tarballs.openstack.org/%{name}/%{name}/%{name}-%{version}.tar.gz
+Source0:       http://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
 
 BuildArch:     noarch
 
