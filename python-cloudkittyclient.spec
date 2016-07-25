@@ -8,7 +8,7 @@
 
 Name:          python-cloudkittyclient
 Version:       0.5.0
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
@@ -133,5 +133,8 @@ sphinx-build -b html doc/source html
 %license LICENSE
 
 %changelog
+* Mon Jul 25 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 0.5.0-2
+- Add python3 subpackage
+
 * Wed Mar 23 2016 RDO <rdo-list@redhat.com> 0.5.0-0.1
 -  Rebuild for Mitaka 
