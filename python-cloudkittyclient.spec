@@ -135,3 +135,4 @@ sphinx-build -b html doc/source html
 %license LICENSE
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=bcab48938507c4e70ddc68d5df6debbd3c403ab2
