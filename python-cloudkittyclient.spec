@@ -28,15 +28,16 @@ BuildRequires: python2-devel
 BuildRequires: python-setuptools
 BuildRequires: python-pbr
 
-Requires:      python-keystoneclient
+Requires:      python-keystoneclient >= 1:1.7.0
 Requires:      python-stevedore
 Requires:      python-babel
 Requires:      python-pbr
 Requires:      python-babel
-Requires:      python-oslo-i18n
-Requires:      python-oslo-serialization
-Requires:      python-oslo-utils
+Requires:      python-oslo-i18n >= 2.1.0
+Requires:      python-oslo-serialization >= 1.10.0
+Requires:      python-oslo-utils >= 3.11.0
 Requires:      python-prettytable
+Requires:      python-openstackclient >= 3.0.0
 
 %description -n python2-%{sname}
 python-cloudkittyclient is a command-line client for CloudKitty, the
@@ -51,15 +52,16 @@ BuildRequires: python3-devel
 BuildRequires: python3-setuptools
 BuildRequires: python3-pbr
 
-Requires:      python3-keystoneclient
+Requires:      python3-keystoneclient >= 1:1.7.0
 Requires:      python3-stevedore
 Requires:      python3-babel
 Requires:      python3-pbr
 Requires:      python3-babel
-Requires:      python3-oslo-i18n
-Requires:      python3-oslo-serialization
-Requires:      python3-oslo-utils
+Requires:      python3-oslo-i18n >= 2.1.0
+Requires:      python3-oslo-serialization >= 1.10.0
+Requires:      python3-oslo-utils >= 3.11.0
 Requires:      python3-prettytable
+Requires:      python3-openstackclient >= 3.0.0
 
 %description -n python3-%{sname}
 python-cloudkittyclient is a command-line client for CloudKitty, the
