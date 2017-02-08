@@ -7,8 +7,8 @@
 %endif
 
 Name:          python-cloudkittyclient
-Version:       XXX
-Release:       XXX
+Version:       1.0.0
+Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
@@ -135,3 +135,6 @@ sphinx-build -b html doc/source html
 %license LICENSE
 
 %changelog
+* Wed Feb 08 2017 Alfredo Moralejo <amoralej@redhat.com> 1.0.0-1
+- Update to 1.0.0
+
