@@ -1,6 +1,9 @@
-# UUID                                  	Group Name
-#
-020462a804807f00537d31398831d294129df863	openstack/cloudkittyclient-distgit-core
-63673ea7f2ae6a5666566b1ea9f14e473d00f5a9	rdo-core
-f4923d2a33196e7fe34d754c78938a42057c0cdb	openstack/cloudkittyclient-distgit-ptl
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+d2e065c4d12f053b6eaa84034d241a4044a5dbdd	openstack/cloudkittyclient-ptl
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
+27e589f784072a00f4b0063c5cd49cf0d1b5a5d1	openstack/cloudkittyclient-core
