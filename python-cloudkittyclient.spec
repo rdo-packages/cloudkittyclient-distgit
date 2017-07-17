@@ -32,6 +32,7 @@ Requires:      python-keystoneclient >= 1:1.7.0
 Requires:      python-stevedore
 Requires:      python-babel
 Requires:      python-pbr
+Requires:      git
 Requires:      python-babel
 Requires:      python-oslo-i18n >= 2.1.0
 Requires:      python-oslo-serialization >= 1.10.0
@@ -72,7 +73,7 @@ Rating-as-a-Service component for OpenStack.
 Summary:       Documentation for the CloudKitty client
 
 BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python-openstackdocstheme
 
 Requires: %{name} = %{version}-%{release}
 
@@ -81,7 +82,7 @@ python-cloudkittyclient is a command-line client for CloudKitty, the
 Rating-as-a-Service component for OpenStack.
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%autosetup -n %{name}-%{upstream_version} -S git
 
 %build
 %py2_build
@@ -107,9 +108,7 @@ ln -s ./cloudkitty-2 %{buildroot}%{_bindir}/cloudkitty
 # Delete tests
 rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 
-export PYTHONPATH="$( pwd ):$PYTHONPATH"
-sphinx-build -b html doc/source html
-
+%{__python2} setup.py build_sphinx -b html
 
 %files -n python2-%{sname}
 %doc README.rst
@@ -131,7 +130,7 @@ sphinx-build -b html doc/source html
 %endif
 
 %files doc
-%doc html
+%doc doc/build/html
 %license LICENSE
 
 %changelog
