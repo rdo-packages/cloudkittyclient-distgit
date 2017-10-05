@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_67b4e5f2",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 424
+      },
+      "writtenOn": "2017-10-05T11:39:45Z",
+      "side": 1,
+      "message": "needs a line about documentation here",
+      "revId": "d32bf0aee9c918a1e58c097b7c13dba3ed369fa6",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
