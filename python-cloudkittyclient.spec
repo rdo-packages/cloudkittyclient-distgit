@@ -6,6 +6,10 @@
 %global with_python3 1
 %endif
 
+%global common_desc \
+python-cloudkittyclient is a command-line client for CloudKitty, the \
+Rating-as-a-Service component for OpenStack.
+
 Name:          python-cloudkittyclient
 Version:       XXX
 Release:       XXX
@@ -17,8 +21,8 @@ Source0:       https://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
 BuildArch:     noarch
 
 %description
-python-cloudkittyclient is a command-line client for CloudKitty, the
-Rating-as-a-Service component for OpenStack.
+%{common_desc}
+
 
 %package -n python2-%{sname}
 Summary:       Client library for CloudKitty
@@ -41,8 +45,7 @@ Requires:      python-prettytable
 Requires:      python-openstackclient >= 3.0.0
 
 %description -n python2-%{sname}
-python-cloudkittyclient is a command-line client for CloudKitty, the
-Rating-as-a-Service component for OpenStack.
+%{common_desc}
 
 %if 0%{?with_python3}
 %package -n python3-%{sname}
@@ -65,8 +68,7 @@ Requires:      python3-prettytable
 Requires:      python3-openstackclient >= 3.0.0
 
 %description -n python3-%{sname}
-python-cloudkittyclient is a command-line client for CloudKitty, the
-Rating-as-a-Service component for OpenStack.
+%{common_desc}
 %endif
 
 %package doc
@@ -78,9 +80,9 @@ BuildRequires: python-openstackdocstheme
 Requires: %{name} = %{version}-%{release}
 
 %description doc
-python-cloudkittyclient is a command-line client for CloudKitty, the
-Rating-as-a-Service component for OpenStack.
+%{common_desc}
 
+This package contains documentation.
 %prep
 %autosetup -n %{name}-%{upstream_version} -S git
 
