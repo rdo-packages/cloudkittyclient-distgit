@@ -29,20 +29,20 @@ Summary:       Client library for CloudKitty
 %{?python_provide:%python_provide python2-%{sname}}
 
 BuildRequires: python2-devel
-BuildRequires: python-setuptools
-BuildRequires: python-pbr
+BuildRequires: python2-setuptools
+BuildRequires: python2-pbr
 
-Requires:      python-keystoneclient >= 1:1.7.0
-Requires:      python-stevedore
-Requires:      python-babel
-Requires:      python-pbr
+Requires:      python2-keystoneclient >= 1:3.8.0
+Requires:      python2-stevedore
+Requires:      python2-babel
+Requires:      python2-pbr
 Requires:      git
-Requires:      python-babel
-Requires:      python-oslo-i18n >= 2.1.0
-Requires:      python-oslo-serialization >= 1.10.0
-Requires:      python-oslo-utils >= 3.11.0
-Requires:      python-prettytable
-Requires:      python-openstackclient >= 3.0.0
+Requires:      python2-babel
+Requires:      python2-oslo-i18n >= 2.1.0
+Requires:      python2-oslo-serialization >= 1.10.0
+Requires:      python2-oslo-utils >= 3.20.0
+Requires:      python2-prettytable
+Requires:      python2-openstackclient >= 3.3.0
 
 %description -n python2-%{sname}
 %{common_desc}
@@ -56,16 +56,16 @@ BuildRequires: python3-devel
 BuildRequires: python3-setuptools
 BuildRequires: python3-pbr
 
-Requires:      python3-keystoneclient >= 1:1.7.0
+Requires:      python3-keystoneclient >= 1:3.8.0
 Requires:      python3-stevedore
 Requires:      python3-babel
 Requires:      python3-pbr
 Requires:      python3-babel
 Requires:      python3-oslo-i18n >= 2.1.0
 Requires:      python3-oslo-serialization >= 1.10.0
-Requires:      python3-oslo-utils >= 3.11.0
+Requires:      python3-oslo-utils >= 3.20.0
 Requires:      python3-prettytable
-Requires:      python3-openstackclient >= 3.0.0
+Requires:      python3-openstackclient >= 3.3.0
 
 %description -n python3-%{sname}
 %{common_desc}
@@ -74,8 +74,8 @@ Requires:      python3-openstackclient >= 3.0.0
 %package doc
 Summary:       Documentation for the CloudKitty client
 
-BuildRequires: python-sphinx
-BuildRequires: python-openstackdocstheme
+BuildRequires: python2-sphinx
+BuildRequires: python2-openstackdocstheme
 
 Requires: %{name} = %{version}-%{release}
 
