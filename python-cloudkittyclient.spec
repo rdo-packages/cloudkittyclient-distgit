@@ -11,8 +11,8 @@ python-cloudkittyclient is a command-line client for CloudKitty, the \
 Rating-as-a-Service component for OpenStack.
 
 Name:          python-cloudkittyclient
-Version:       XXX
-Release:       XXX
+Version:       1.2.0
+Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
@@ -136,3 +136,6 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
+* Sun Feb 11 2018 RDO <dev@lists.rdoproject.org> 1.2.0-1
+- Update to 1.2.0
+
