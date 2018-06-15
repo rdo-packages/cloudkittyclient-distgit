@@ -136,3 +136,4 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=d070f6a68cddf51c57e77107f1b823a8f75770ba
