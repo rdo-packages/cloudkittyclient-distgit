@@ -28,21 +28,26 @@ BuildArch:     noarch
 Summary:       Client library for CloudKitty
 %{?python_provide:%python_provide python2-%{sname}}
 
+BuildRequires: python2-cliff
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
 BuildRequires: python2-pbr
+BuildRequires: python2-mock
+BuildRequires: python2-stestr
+BuildRequires: python2-openstackclient >= 3.14.0
+BuildRequires: python2-oslo-log >= 3.36
 
-Requires:      python2-keystoneclient >= 1:3.8.0
-Requires:      python2-stevedore
-Requires:      python2-babel
+Requires:      python2-keystoneauth1 >= 1:3.4.0
 Requires:      python2-pbr
+Requires:      python2-cliff
 Requires:      git
-Requires:      python2-babel
-Requires:      python2-oslo-i18n >= 2.1.0
-Requires:      python2-oslo-serialization >= 1.10.0
-Requires:      python2-oslo-utils >= 3.20.0
-Requires:      python2-prettytable
-Requires:      python2-openstackclient >= 3.3.0
+Requires:      PyYAML >= 3.12
+Requires:      python2-oslo-utils >= 3.35
+Requires:      python2-oslo-log >= 3.36
+Requires:      python2-openstackclient >= 3.14.0
+Requires:      python-jsonpath-rw-ext
+Requires:      python2-six >= 1.11.0
+Requires:      python2-os-client-config
 
 %description -n python2-%{sname}
 %{common_desc}
@@ -55,17 +60,22 @@ Summary:       Client library for CloudKitty
 BuildRequires: python3-devel
 BuildRequires: python3-setuptools
 BuildRequires: python3-pbr
+BuildRequires: python3-cliff
+BuildRequires: python3-mock
+BuildRequires: python3-stestr
+BuildRequires: python3-openstackclient >= 3.14.0
+BuildRequires: python3-oslo-log >= 3.36
 
-Requires:      python3-keystoneclient >= 1:3.8.0
-Requires:      python3-stevedore
-Requires:      python3-babel
+Requires:      python3-keystoneauth1 >= 1:3.4.0
 Requires:      python3-pbr
-Requires:      python3-babel
-Requires:      python3-oslo-i18n >= 2.1.0
-Requires:      python3-oslo-serialization >= 1.10.0
-Requires:      python3-oslo-utils >= 3.20.0
-Requires:      python3-prettytable
-Requires:      python3-openstackclient >= 3.3.0
+Requires:      python3-cliff
+Requires:      python3-PyYAML >= 3.12
+Requires:      python3-oslo-utils >= 3.35
+Requires:      python3-oslo-log >= 3.36
+Requires:      python3-openstackclient >= 3.14.0
+Requires:      python3-jsonpath-rw-ext
+Requires:      python3-six >= 1.11.0
+Requires:      python3-os-client-config
 
 %description -n python3-%{sname}
 %{common_desc}
@@ -136,3 +146,4 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=d070f6a68cddf51c57e77107f1b823a8f75770ba
