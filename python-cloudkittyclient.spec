@@ -28,6 +28,7 @@ BuildArch:     noarch
 Summary:       Client library for CloudKitty
 %{?python_provide:%python_provide python2-%{sname}}
 
+BuildRequires: python2-cliff
 BuildRequires: python2-devel
 BuildRequires: python2-setuptools
 BuildRequires: python2-pbr
@@ -36,6 +37,7 @@ Requires:      python2-keystoneclient >= 1:3.8.0
 Requires:      python2-stevedore
 Requires:      python2-babel
 Requires:      python2-pbr
+Requires:      python2-cliff
 Requires:      git
 Requires:      python2-babel
 Requires:      python2-oslo-i18n >= 2.1.0
@@ -136,3 +138,4 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=d070f6a68cddf51c57e77107f1b823a8f75770ba
