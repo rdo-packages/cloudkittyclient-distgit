@@ -47,8 +47,7 @@ Requires:      python2-oslo-utils >= 3.35
 Requires:      python2-oslo-log >= 3.36
 Requires:      python2-openstackclient >= 3.14.0
 Requires:      python2-jsonpath-rw-ext
-# FIXME(hguemar): should be 1.11.0 when new python-six hits Rocky
-Requires:      python2-six >= 1.10.0
+Requires:      python2-six >= 1.11.0
 Requires:      python2-os-client-config
 
 %description -n python2-%{sname}
@@ -77,8 +76,7 @@ Requires:      python3-oslo-utils >= 3.35
 Requires:      python3-oslo-log >= 3.36
 Requires:      python3-openstackclient >= 3.14.0
 Requires:      python3-jsonpath-rw-ext
-# FIXME(hguemar): should be 1.11.0 when new python-six hits Rocky
-Requires:      python3-six >= 1.10.0
+Requires:      python3-six >= 1.11.0
 Requires:      python3-os-client-config
 
 %description -n python3-%{sname}
@@ -150,4 +148,3 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
-# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=d070f6a68cddf51c57e77107f1b823a8f75770ba
