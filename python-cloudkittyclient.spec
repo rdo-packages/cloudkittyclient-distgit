@@ -37,11 +37,11 @@ BuildRequires: python2-stestr
 BuildRequires: python2-openstackclient >= 3.14.0
 BuildRequires: python2-oslo-log >= 3.36
 BuildRequires: python2-jsonpath-rw-ext
+BuildRequires: git
 
 Requires:      python2-keystoneauth1 >= 3.4.0
 Requires:      python2-pbr
 Requires:      python2-cliff
-Requires:      git
 Requires:      PyYAML
 Requires:      python2-oslo-utils >= 3.35
 Requires:      python2-oslo-log >= 3.36
