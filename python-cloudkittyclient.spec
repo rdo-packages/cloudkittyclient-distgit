@@ -11,8 +11,8 @@ python-cloudkittyclient is a command-line client for CloudKitty, the \
 Rating-as-a-Service component for OpenStack.
 
 Name:          python-cloudkittyclient
-Version:       XXX
-Release:       XXX
+Version:       2.0.0
+Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
@@ -104,6 +104,11 @@ This package contains documentation.
 %py3_build
 %endif
 
+# Build html documentation
+sphinx-build -b html doc/source doc/build/html
+# Remove the sphinx-build leftovers
+rm -rf doc/build/html/.{doctrees,buildinfo}
+
 %install
 %if 0%{?with_python3}
 %py3_install
@@ -121,8 +126,6 @@ ln -s ./cloudkitty-2 %{buildroot}%{_bindir}/cloudkitty
 
 # Delete tests
 rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
-
-%{__python2} setup.py build_sphinx -b html
 
 %files -n python2-%{sname}
 %doc README.rst
@@ -148,4 +151,6 @@ rm -fr %{buildroot}%{python2_sitelib}/%{sname}/tests
 %license LICENSE
 
 %changelog
-# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=d070f6a68cddf51c57e77107f1b823a8f75770ba
+* Fri Aug 10 2018 RDO <dev@lists.rdoproject.org> 2.0.0-1
+- Update to 2.0.0
+
