@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_c55814fd",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 517
+      },
+      "writtenOn": "2018-10-24T09:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_c5ca54a1",
+      "range": {
+        "startLine": 18,
+        "startChar": 14,
+        "endLine": 18,
+        "endChar": 15
+      },
+      "revId": "9795ae2f790bf5badcba5aabe44216d581eb5c51",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_65c0287d",
         "filename": "python-cloudkittyclient.spec",
         "patchSetId": 8
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_e561d8a9",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 517
+      },
+      "writtenOn": "2018-10-24T09:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_65c0287d",
+      "range": {
+        "startLine": 67,
+        "startChar": 23,
+        "endLine": 67,
+        "endChar": 29
+      },
+      "revId": "9795ae2f790bf5badcba5aabe44216d581eb5c51",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_85c57c8f",
         "filename": "python-cloudkittyclient.spec",
         "patchSetId": 8
@@ -59,6 +107,30 @@
       "writtenOn": "2018-10-24T09:07:29Z",
       "side": 1,
       "message": "This should be %{buildroot}%{_bindir}/%{cname}",
+      "range": {
+        "startLine": 100,
+        "startChar": 24,
+        "endLine": 100,
+        "endChar": 32
+      },
+      "revId": "9795ae2f790bf5badcba5aabe44216d581eb5c51",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_055f2ce6",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 8
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 517
+      },
+      "writtenOn": "2018-10-24T09:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9abe1de1_85c57c8f",
       "range": {
         "startLine": 100,
         "startChar": 24,
