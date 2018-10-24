@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "9abe1de1_5a073f1c",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-24T08:12:37Z",
+      "side": 1,
+      "message": "I\u0027d keep python-%{sname} here (note the % instead of $)",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_3a2b6b96",
         "filename": "python-cloudkittyclient.spec",
         "patchSetId": 1
@@ -25,6 +48,75 @@
     },
     {
       "key": {
+        "uuid": "9abe1de1_ba153b4a",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-24T08:12:37Z",
+      "side": 1,
+      "message": "This should be python-%{sname}",
+      "range": {
+        "startLine": 22,
+        "startChar": 21,
+        "endLine": 22,
+        "endChar": 29
+      },
+      "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_a50c003c",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-24T08:12:37Z",
+      "side": 1,
+      "message": "Be careful with all these % after %{pyver}",
+      "range": {
+        "startLine": 36,
+        "startChar": 26,
+        "endLine": 36,
+        "endChar": 27
+      },
+      "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_7a21e3b3",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-24T08:12:37Z",
+      "side": 1,
+      "message": "This is different for python2 and python3, we need to add a conditional as done in octaviaclient, i.e.",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 21
+      },
+      "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9abe1de1_9a0dd740",
         "filename": "python-cloudkittyclient.spec",
         "patchSetId": 1
@@ -36,6 +128,29 @@
       "writtenOn": "2018-10-24T08:10:36Z",
       "side": 1,
       "message": "sphinx-build-%{pyver}",
+      "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_85145c44",
+        "filename": "python-cloudkittyclient.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2018-10-24T08:12:37Z",
+      "side": 1,
+      "message": "Let me look for a solution which includes the long version binary for compatibility.",
+      "range": {
+        "startLine": 91,
+        "startChar": 29,
+        "endLine": 91,
+        "endChar": 29
+      },
       "revId": "2646141c44834a2d607567ab02c873f0944d44d2",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
