@@ -1,0 +1,9 @@
+Code-Review+2: chkumar246 <chkumar@redhat.com>
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 24 Oct 2018 12:14:07 +0000
+Reviewed-on: https://review.rdoproject.org/r/17079
+Project: openstack/cloudkittyclient-distgit
+Branch: refs/heads/rpm-master
