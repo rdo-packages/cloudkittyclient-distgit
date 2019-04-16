@@ -7,7 +7,7 @@
 %endif
 
 Name:          python-cloudkittyclient
-Version:       1.1.0
+Version:       1.1.1
 Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
@@ -135,6 +135,9 @@ sphinx-build -b html doc/source html
 %license LICENSE
 
 %changelog
+* Tue Apr 16 2019 RDO <dev@lists.rdoproject.org> 1.1.1-1
+- Update to 1.1.1
+
 * Mon Aug 14 2017 Alfredo Moralejo <amoralej@redhat.com> 1.1.0-1
 - Update to 1.1.0
 
