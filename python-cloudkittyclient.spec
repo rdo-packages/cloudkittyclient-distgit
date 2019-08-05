@@ -16,6 +16,7 @@
 
 %global cname cloudkitty
 %global sname %{cname}client
+%global with_doc 1
 
 %global common_desc \
 python-%{sname} is a command-line client for CloudKitty, the \
@@ -70,6 +71,7 @@ Requires:      python%{pyver}-yaml
 %description -n python%{pyver}-%{sname}
 %{common_desc}
 
+%if 0%{?with_doc}
 %package doc
 Summary:       Documentation for the CloudKitty client
 
@@ -82,16 +84,19 @@ Requires: python%{pyver}-%{sname} = %{version}-%{release}
 %{common_desc}
 
 This package contains documentation.
+%endif
 %prep
 %autosetup -n %{name}-%{upstream_version} -S git
 
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # Build html documentation
 sphinx-build-%{pyver} -b html doc/source doc/build/html
 # Remove the sphinx-build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -112,8 +117,10 @@ rm -fr %{buildroot}%{pyver_sitelib}/%{sname}/tests
 %{_bindir}/%{cname}-%{pyver}
 %{_bindir}/%{cname}-%{python_version}
 
+%if 0%{?with_doc}
 %files doc
 %doc doc/build/html
 %license LICENSE
+%endif
 
 %changelog
