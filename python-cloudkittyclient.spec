@@ -60,6 +60,7 @@ Requires:      python%{pyver}-openstackclient >= 3.14.0
 Requires:      python%{pyver}-jsonpath-rw-ext
 Requires:      python%{pyver}-six >= 1.11
 Requires:      python%{pyver}-os-client-config
+Requires:      python%{pyver}-osc-lib >= 1.12.1
 
 # Handle python2 exception
 %if %{pyver} == 2
