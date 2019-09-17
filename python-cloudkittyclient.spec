@@ -125,3 +125,4 @@ rm -fr %{buildroot}%{pyver_sitelib}/%{sname}/tests
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/python-cloudkittyclient/commit/?id=296fd22640eb9c27814e5c4a9ef505fd8730f903
