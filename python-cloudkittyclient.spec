@@ -78,6 +78,7 @@ Summary:       Documentation for the CloudKitty client
 
 BuildRequires: python%{pyver}-sphinx
 BuildRequires: python%{pyver}-openstackdocstheme
+BuildRequires: python%{pyver}-sphinxcontrib-rsvgconverter
 
 Requires: python%{pyver}-%{sname} = %{version}-%{release}
 
