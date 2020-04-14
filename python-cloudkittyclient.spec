@@ -56,18 +56,12 @@ Requires:      python%{pyver}-pbr
 Requires:      python%{pyver}-cliff
 Requires:      python%{pyver}-oslo-utils >= 3.35
 Requires:      python%{pyver}-oslo-log >= 3.36
-Requires:      python%{pyver}-openstackclient >= 3.14.0
 Requires:      python%{pyver}-jsonpath-rw-ext
 Requires:      python%{pyver}-six >= 1.11
 Requires:      python%{pyver}-os-client-config
 Requires:      python%{pyver}-osc-lib >= 1.12.1
 
-# Handle python2 exception
-%if %{pyver} == 2
-Requires:      PyYAML
-%else
 Requires:      python%{pyver}-yaml
-%endif
 
 %description -n python%{pyver}-%{sname}
 %{common_desc}
