@@ -10,8 +10,8 @@ python-%{sname} is a command-line client for CloudKitty, the \
 Rating-as-a-Service component for OpenStack.
 
 Name:          python-%{sname}
-Version:       XXX
-Release:       XXX
+Version:       4.0.0
+Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
 URL:           http://launchpad.net/%{name}/
@@ -107,3 +107,6 @@ rm -fr %{buildroot}%{python3_sitelib}/%{sname}/tests
 %endif
 
 %changelog
+* Mon Apr 27 2020 RDO <dev@lists.rdoproject.org> 4.0.0-1
+- Update to 4.0.0
+
