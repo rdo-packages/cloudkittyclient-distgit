@@ -44,7 +44,6 @@ Requires:      python3-cliff
 Requires:      python3-oslo-utils >= 3.35
 Requires:      python3-oslo-log >= 3.36
 Requires:      python3-jsonpath-rw-ext
-Requires:      python3-six >= 1.11
 Requires:      python3-os-client-config
 Requires:      python3-osc-lib >= 1.12.1
 
