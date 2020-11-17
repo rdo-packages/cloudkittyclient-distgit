@@ -49,7 +49,7 @@ BuildRequires: python3-stestr
 BuildRequires: python3-openstackclient >= 3.14.0
 BuildRequires: python3-oslo-log >= 3.36
 BuildRequires: python3-jsonpath-rw-ext
-BuildRequires: git
+BuildRequires: git-core
 
 Requires:      python3-keystoneauth1 >= 3.4.0
 Requires:      python3-pbr
