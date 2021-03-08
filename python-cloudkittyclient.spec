@@ -51,16 +51,16 @@ BuildRequires: python3-oslo-log >= 3.36
 BuildRequires: python3-jsonpath-rw-ext
 BuildRequires: git-core
 
-Requires:      python3-keystoneauth1 >= 3.4.0
+Requires:      python3-keystoneauth1 >= 4.3.0
 Requires:      python3-pbr
-Requires:      python3-cliff
-Requires:      python3-oslo-utils >= 3.35
-Requires:      python3-oslo-log >= 3.36
-Requires:      python3-jsonpath-rw-ext
-Requires:      python3-os-client-config
-Requires:      python3-osc-lib >= 1.12.1
+Requires:      python3-cliff >= 3.5.0
+Requires:      python3-oslo-utils >= 4.7.0
+Requires:      python3-oslo-log >= 4.4.0
+Requires:      python3-jsonpath-rw-ext >= 1.2.0
+Requires:      python3-os-client-config >= 2.1.0
+Requires:      python3-osc-lib >= 2.3.0
 
-Requires:      python3-yaml
+Requires:      python3-yaml >= 5.3.1
 
 %description -n python3-%{sname}
 %{common_desc}
