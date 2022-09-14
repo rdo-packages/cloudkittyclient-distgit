@@ -16,6 +16,23 @@
       "message": "missing python3-openstackclient",
       "revId": "e5745f959ff4a3c2849c1b32b71e3862ff4332f7",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54b89a15_2230770f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-09-14T14:48:40Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "e5745f959ff4a3c2849c1b32b71e3862ff4332f7",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
