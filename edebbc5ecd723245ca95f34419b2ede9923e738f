@@ -1,0 +1,8 @@
+Code-Review+2: Karolina Kula <kkula@redhat.com>
+Workflow+1: Karolina Kula <kkula@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 04 Sep 2023 09:46:26 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/cloudkittyclient-distgit/+/49831
+Project: openstack/cloudkittyclient-distgit
+Branch: refs/heads/rpm-master
