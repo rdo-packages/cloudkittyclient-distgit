@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0xa7475c5f2122fec3f90343223fe3bf5aad1080e4
+%global sources_gpg_sign 0xf8675126e2411e7748dd46662fc2093e4682645f
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
@@ -12,7 +12,7 @@ python-%{sname} is a command-line client for CloudKitty, the \
 Rating-as-a-Service component for OpenStack.
 
 Name:          python-%{sname}
-Version:       4.7.0
+Version:       4.7.1
 Release:       1%{?dist}
 Summary:       Client library for CloudKitty
 License:       ASL 2.0
@@ -123,6 +123,9 @@ rm -fr %{buildroot}%{python3_sitelib}/%{sname}/tests
 %endif
 
 %changelog
+* Mon Aug 05 2024 RDO <dev@lists.rdoproject.org> 4.7.1-1
+- Update to 4.7.1
+
 * Thu Mar 09 2023 RDO <dev@lists.rdoproject.org> 4.7.0-1
 - Update to 4.7.0
 
